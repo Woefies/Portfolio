@@ -1,0 +1,60 @@
+body {
+    margin: 50px;
+    background-color: hotpink;
+    font-family: Arial;
+}
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    width: 50%;
+    float: right;
+}
+
+p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: aqua;
+}
+
+h1,
+h2,
+h3,
+li {
+    color: aqua;
+}
+
+img {
+    width: 600px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: pink;
+    color: black;
+}
+
+footer {
+    margin-top: 400px;
+    padding: 40px;
+    background-color: black;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
