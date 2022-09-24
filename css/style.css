@@ -6,11 +6,11 @@ body {
 
 section {
     float: left;
-    width: 50%;
+    width: 40%;
 }
 
 aside {
-    width: 50%;
+    width: 60%;
     float: right;
 }
 
@@ -58,3 +58,31 @@ footer a {
     color: white;
     font-weight: bold;
 }
+.flex {
+    width: 400px;
+    margin: auto;
+    border: 5px solid aqua;
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 0;
+   
+  }
+  .flex h2 {
+     text-align: center;
+  }
+  .flex h3 {
+    padding-left: 10px;
+  }
+  
+  .flex p {
+    text-align: center;
+    background-color: aqua;
+    color: hotpink;
+    padding: 20px;
+    margin: 0;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .flex img {
+    max-height: 400px;
+    max-width: 400px;
+  }
