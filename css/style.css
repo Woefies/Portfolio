@@ -1,6 +1,7 @@
 body {
-    margin: 50px;
-    background-color: hotpink;
+    margin: 50px 200px 50px 200px;
+    background: rgb(23,57,85);
+    background: linear-gradient(90deg, rgba(23,57,85,1) 0%, rgba(40,40,78,1) 100%);
     font-family: Arial;
 }
 
@@ -17,14 +18,14 @@ aside {
 p {
     margin-top: 30px;
     margin-bottom: 30px;
-    color: aqua;
+    color: #df61ee;
 }
 
 h1,
 h2,
 h3,
 li {
-    color: aqua;
+    color: #df61ee;
 }
 
 img {
@@ -37,20 +38,23 @@ a {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #df61ee;
     font-size: 20px;
     padding: 20px;
 }
 
 nav a:hover {
-    background-color: pink;
-    color: black;
+    background-color: #6c52b3;
+    color: #37c2fd;
 }
-
+header h1 {
+    margin-top: 50px;
+}
 footer {
-    margin-top: 400px;
+    margin-top: 800px;
     padding: 40px;
-    background-color: black;
+    background: rgb(23,57,85);
+background: radial-gradient(circle, rgba(23,57,85,1) 0%, rgba(40,40,78,1) 100%);
 }
 
 footer a {
@@ -61,11 +65,19 @@ footer a {
 .flex {
     width: 400px;
     margin: auto;
-    border: 5px solid aqua;
+    border: 5px solid #6c52b3;
     border-radius: 25px;
-    background-color: #fff;
+    background-color: #173955;
     padding: 0;
+    
    
+  }
+  .flex ul {
+    list-style: none;
+  }
+  .flex ul li, ul li {
+    padding: 10px;
+    padding-top: 0px;
   }
   .flex h2 {
      text-align: center;
@@ -76,8 +88,8 @@ footer a {
   
   .flex p {
     text-align: center;
-    background-color: aqua;
-    color: hotpink;
+    background-color: #6c52b3;
+    color: #37c2fd;
     padding: 20px;
     margin: 0;
     border-radius: 0px 0px 20px 20px;
@@ -86,3 +98,6 @@ footer a {
     max-height: 400px;
     max-width: 400px;
   }
+ .flex h3, .flex li, .flex h2{
+    color: #37c2fd;
+}
