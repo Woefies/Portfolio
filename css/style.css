@@ -228,6 +228,10 @@ ul li {
     transition: 0.3s;
     padding: 20px;
 }
+.project img {
+    width: 400px;
+    height: 300px;
+}
 
 .project:hover {
     background-color: #28284e;
@@ -355,6 +359,11 @@ ul li {
         margin: 0 8% 30px 8%;
         
     }
+    .project img {
+        width: 300px;
+        height: 300px;
+    }
+    
 
  }
  @media screen and (max-width: 499px){
@@ -371,6 +380,11 @@ ul li {
     .info-card {
         margin-top: 450px;
     }
+    .project img {
+        width: 200px;
+        height: 200px;
+    }
+    
  }
  @media screen and (max-width: 425px){
     header {
