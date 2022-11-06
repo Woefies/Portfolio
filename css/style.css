@@ -41,7 +41,7 @@ nav {
 nav a {
     text-decoration: none;
     color: #df61ee;
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: bold;
     padding: 20px;
     transition: 0.3s;
@@ -91,14 +91,14 @@ header {
 }
 
 .hero h1 {
-    font-size: 50px;
+    font-size: 3.6em;
     font-weight: bold;
     margin: 0 20% 0 20%;
 
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 
@@ -161,11 +161,11 @@ ul li {
     height: 400px;
     width: auto;
     padding: 20px 200px 40px 200px;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .information h2 {
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .information ul,
@@ -196,7 +196,7 @@ ul li {
 }
 
 .work {
-    margin: 100px 200px 0 200px;
+    margin: 200px 200px 0 200px;
 }
 
 .work h2,
@@ -209,7 +209,8 @@ ul li {
 }
 
 .work h2,
-.work-text {
+.work-text,
+.form h2 {
     background-color: #183955;
     text-align: center;
     padding: 5px;
@@ -218,8 +219,8 @@ ul li {
 
 .projects {
     display: flex;
-    margin-top: 80px;
-
+    margin-top: 70px;
+    justify-content: center;
 }
 
 .project {
@@ -227,10 +228,16 @@ ul li {
     box-shadow: 5px 10px #28284e;
     transition: 0.3s;
     padding: 20px;
+
 }
+
 .project img {
     width: 300px;
     height: 200px;
+}
+
+.project h3 {
+    padding-bottom: 10px;
 }
 
 .project:hover {
@@ -239,10 +246,82 @@ ul li {
 }
 
 .one,
-.two {
+.two,
+.three {
     margin-right: 30px;
 }
 
+.form {
+    margin: 200px 200px 100px 200px;
+    display: block;
+}
+
+.form h2 {
+    margin: 0 30% 0 30%;
+}
+form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input,
+select,
+textarea {
+    margin: 0px 20px 20px 20px;
+    width: 60%;
+    padding: 10px;
+    background-color: #1e3a54;
+    color: #df61ee;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 10px #28284e;
+    border: #6b55af 2px solid;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+input[type=submit]:focus {
+    box-shadow: 5px 10px #28284e;
+}
+
+input[type=submit]:hover {
+    box-shadow: 5px 10px #1e3a54;
+    background-color: #28294c;
+}
+
+form textarea {
+    width: 70%;
+    resize: none;
+    height: 150px;
+    font-family: Arial;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 5px 10px #6b55af;
+
+}
+label {
+    color: #df61ee;
+    background-color: #183955;
+    box-shadow: 5px 10px #28284e;
+    padding: 10px;
+    margin: 50px 20px 20px 0px;
+    width: 20%;
+}
+label:after {
+    content: " *";
+    color: red;
+}
 @media screen and (min-width: 1440px) {
     .flex {
         display: flex;
@@ -253,12 +332,24 @@ ul li {
     .info-card {
         margin-top: 100px;
     }
+
     .projects {
         flex-wrap: wrap;
-        
+
     }
+
     .project {
-        margin: 30px;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 1245px) {
+
+    input,
+    select,
+    textarea {
+        width: 95%;
+
     }
 }
 
@@ -272,33 +363,40 @@ ul li {
         padding: 20px 100px 40px 100px;
     }
 
-    .work {
+    .work,
+    .form {
         padding: 100px 50px 40px 50px;
         margin: 0 100px 0 100px;
     }
 
     .work h2,
-    .work-text {
+    .work-text,
+    .form h2 {
         margin: 0 15% 30px 15%;
-        
+
     }
-    
+
 }
+
 @media screen and (max-width: 1024px) {
     .hero h1 {
-        font-size: 42px;
+        font-size: 2.5em;
     }
+
+    .info-card {
+        margin-top: 200px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
     header {
         padding: 0px 50px 300px 50px;
     }
+
     nav {
         display: flex;
         justify-content: center;
-    }
-    nav  {
         padding: 0 20px 0 20px;
     }
 
@@ -307,122 +405,192 @@ ul li {
         padding: 20px 50px 40px 50px;
     }
 
-    .work {
+    .work,
+    .form {
         padding: 100px 50px 40px 50px;
         margin: 0 50px 0 50px;
     }
 
     .work h2,
-    .work-text {
+    .work-text,
+    .form h2 {
         margin: 0 10% 30px 10%;
-        
+
     }
+
     .info-card {
         margin-top: 200px;
     }
-    
+
+    input[type=submit] {
+        width: 60%;
+    }
 }
+
 @media screen and (max-width: 691px) {
     nav a {
-        font-size: 18px;
+        font-size: 0.8em;
     }
+
     .hero {
         height: 100px;
     }
+
     .hero h1 {
-        font-size: 30px;
+        font-size: 2em;
     }
+
     .hero p {
-        font-size: 20px;
+        font-size: 1.2em;
+    }
+    label {
+        width: 45%;
     }
 }
-@media screen and (max-width: 650px ) {
+
+@media screen and (max-width: 650px) {
+
     .information ul,
     .leren ul {
-       margin-right: 0;
+        margin-right: 0;
         width: auto;
         justify-content: center;
     }
+
     .information {
         text-align: center;
     }
+
     .info-card {
         margin-top: 300px;
     }
-    .work {
+
+    .work,
+    .form {
         padding: 100px 20px 20px 20px;
-        margin: 0 20px 0 20px;
+        margin: 0 20px 0 0px;
     }
 
     .work h2,
     .work-text {
         margin: 0 8% 30px 8%;
-        
+
     }
+
+    .project {
+        margin: 20px;
+    }
+
     .project img {
         width: 300px;
         height: 300px;
     }
-    
 
- }
- @media screen and (max-width: 499px){
-    .information ul li
-     {
+    footer a {
+        margin-left: 20%;
+    }
+
+}
+
+@media screen and (max-width: 499px) {
+    nav {
+        flex-direction: column;
+
+    }
+
+    nav a {
+        font-size: 1em;
+        padding: 10px;
+
+    }
+
+    .information ul li {
         margin-right: 10px;
     }
- }
- @media screen and (max-width: 459px){
-    .information ul li
-     {
+
+    input[type=submit] {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 459px) {
+    .information ul li {
         margin-right: 10px;
     }
+
     .info-card {
         margin-top: 450px;
     }
+
     .project img {
         width: 200px;
         height: 200px;
     }
-    
- }
- @media screen and (max-width: 425px){
+
+}
+
+@media screen and (max-width: 425px) {
     header {
         padding: 0px 20px 300px 20px;
     }
+
     .info-card {
         margin-top: 350px;
         max-width: 300px;
     }
+
     .info-card img {
         max-width: 300px;
         max-height: 300px;
     }
+
     .work {
         padding: 100px 20px 20px 20px;
         margin: 0;
     }
+
     .information,
     .leren {
         padding: 20px 20px 40px 20px;
     }
- }
- @media screen and (max-width: 410px){
+}
+
+@media screen and (max-width: 410px) {
     .info-card {
         width: auto;
     }
+
     .info-card img {
         max-width: auto;
         max-height: auto;
     }
- }
- @media screen and (max-width: 399px) {
-    .info-card{
+}
+
+@media screen and (max-width: 399px) {
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .info-card {
         margin-top: 650px;
     }
- }
- @media  screen and (max-width:350px) {
-    nav a{
-        font-size: 15px;
+
+    .project {
+        margin: 10px;
     }
- }
+
+    input,
+    select,
+    textarea {
+        margin: 20px 10px 10px 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .work,
+    .form {
+        padding: 100px 10px 20px 10px;
+        margin: 0 0px 0 0px;
+    }
+}
