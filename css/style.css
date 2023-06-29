@@ -332,6 +332,13 @@ label:after {
     content: " *";
     color: red;
 }
+
+
+/* p2 */
+.p2-img {
+    width: 100%;
+    object-fit: cover;
+}
 @media screen and (min-width: 1440px) {
     .flex {
         display: flex;
